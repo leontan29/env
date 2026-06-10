@@ -1,0 +1,17 @@
+
+alias em='emacs -nw'
+alias e='emacs -nw'
+alias m='make -j8'
+alias ls='ls -F'
+alias rm~='rm *~'
+alias f='find . -name '
+alias python='python3'
+export EDITOR=vi
+
+case "$TERM" in
+xterm*|rxvt*)
+    PS1="\[\033[1;32m\][\u]$PS1\[\033[0m\]"
+    ;;
+*)
+    ;;
+esac
